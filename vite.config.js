@@ -12,10 +12,10 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          // 分包策略
-          'vendor': ['vue', 'pinia'],
-          'pages': ['pages/**', 'components/**'],
+          // 简化分包策略
+          'vue-vendor': ['vue', 'pinia'],
           'utils': ['utils/**'],
+          // 不分页面包，保持简单
         }
       }
     }
