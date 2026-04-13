@@ -1,0 +1,13 @@
+{
+  "subpackages": [
+    {
+      "root": "packageTest",
+      "name": "packageTest"
+    }
+  ],
+  "preloadRule": {
+    "packageTest": {
+      "network": "all"
+    }
+  }
+}
