@@ -27,41 +27,5 @@
 		"navigationBarTitleText": "职场MBTI",
 		"navigationBarBackgroundColor": "#1a1a2e",
 		"backgroundColor": "#1a1a2e"
-	},
-	"subpackages": [
-		{
-			"root": "packageQuestion",
-			"name": "packageQuestion",
-			"pages": [
-				{
-					"path": "question/index",
-					"style": {
-						"navigationBarTitleText": "测试中",
-						"navigationStyle": "custom"
-					}
-				}
-			]
-		},
-		{
-			"root": "packageResult",
-			"name": "packageResult",
-			"pages": [
-				{
-					"path": "result/index",
-					"style": {
-						"navigationBarTitleText": "你的职场角色",
-						"navigationStyle": "custom"
-					}
-				}
-			]
-		}
-	],
-	"preloadRule": {
-		"packageQuestion": {
-			"network": "all"
-		},
-		"packageResult": {
-			"network": "all"
-		}
 	}
 }

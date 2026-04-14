@@ -1,7 +1,17 @@
 <script>
+// #ifdef MP-WEIXIN
+import { WX_CLOUD_ENV_ID } from './config/weixin-cloud'
+// #endif
+
 export default {
   onLaunch: function () {
     console.log('App Launch')
+    // #ifdef MP-WEIXIN
+    // 初始化云开发后可直接使用 cloud:// 文件ID 作为图片 src
+    if (WX_CLOUD_ENV_ID && typeof wx !== 'undefined' && wx.cloud && wx.cloud.init) {
+      wx.cloud.init({ env: WX_CLOUD_ENV_ID, traceUser: true })
+    }
+    // #endif
   },
   onShow: function () {
     console.log('App Show')
